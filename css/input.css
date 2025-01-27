@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+h4 {
+  position: relative;
+  font-size: 24px;
+}
+h4::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: black;
+  margin-top: 6px;
+}
+
+.icon {
+  background-color: #fbd5d5;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer i {
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
